@@ -64,7 +64,7 @@ jobs:
 
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           commit-message: '[CI] test ${{ matrix.target }}'
           title: '[CI] test ${{ matrix.target }}'
@@ -94,7 +94,7 @@ jobs:
           name: dist
           path: dist
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           commit-message: Update distribution
           title: Update distribution
